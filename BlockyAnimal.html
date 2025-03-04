@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Change a point color</title>
+</head>
+
+<body onload="main()">
+  <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+  </canvas>
+  <br><br>
+  <p id="numdot"> XXX</p>
+  <button id="normalOn">Normal On</button>
+  <button id="normalOff">Normal Off</button><br><br>
+  <button id="lightOn">Light On</button>
+  <button id="lightOff">Light Off</button><br><br>
+  Pink Spotlight: 
+  <button id="spotlightOn">Spotlight On</button>
+  <button id="spotlightOff">Spotlight Off</button><br><br>
+  <p>
+    Light X <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+    Light Y <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideY">
+    Light Z <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideZ">
+  </p>
+  <p>
+    Red Light <input type="range" min="0" max="255" value="255" class="slider" id="lightSlideRed">
+    Green Light <input type="range" min="0" max="255" value="255" class="slider" id="lightSlideGreen">
+    Blue Light<input type="range" min="0" max="255" value="255" class="slider" id="lightSlideBlue">
+  </p>
+  Navigate the corn maze to win. <br>
+  Controls:<br>
+  - WASD to move (smooth! wow!)<br>
+  - Click screen to navigate with mouse<br>
+  - Spacebar to jump (wow!)<br>
+  - Remove dry corn with V<br>
+  - Add it back with C<br>
+  - Q and E rotate screen <br>
+  </p>
+  <br><br>
+  <br><br>
+  <script src="webgl-utils.js"></script>
+  <script src="webgl-debug.js"></script>
+  <script src="cuon-utils.js"></script>
+  <script src="cuon-matrix.js"></script>
+  <script src="Cube.js"></script>
+  <script src="Sphere.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="World.js"></script>
+</body>
+
+</html>
